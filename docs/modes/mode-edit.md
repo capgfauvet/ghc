@@ -11,7 +11,7 @@ Le mode Edit permet de modifier, transformer ou corriger du code existant de fa�
 - Ajout de validations ou de gestion d’erreurs
 - Application de bonnes pratiques
 
-Exemple : « Corrige la fuite mémoire dans cette fonction. »
+Exemple : « Remplace les concaténations par de l’interpolation de chaînes des fichiers [...]. »
 
 > Pour des questions générales ou des explications sans modification de code, consulter le mode [Ask](./mode-ask.md). Pour des actions avancées ou des raisonnements complexes, voir le mode [Agent](./mode-agent.md).
 

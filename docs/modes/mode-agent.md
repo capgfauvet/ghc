@@ -13,6 +13,8 @@ Le mode Agent permet d’automatiser des tâches complexes en interagissant dire
 - Exécution et analyse de tests
 - Résolution de bugs complexes
 
+Exemple : « Corrige la fuite mémoire dans cette fonction. »
+
 > Pour des explications ou questions sans modification de code, consulter le mode [Ask](./mode-ask.md).
 > Pour des modifications ciblées sur une zone de code, voir le mode [Edit](./mode-edit.md).
 
