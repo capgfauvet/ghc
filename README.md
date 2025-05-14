@@ -6,6 +6,7 @@ Ce repository propose une vue d'ensemble rapide sur l'utilisation de GitHub Copi
 
 ### Modes d'utilisation
 
+- [Mode Auto-complétion](./docs/modes/mode-autocomplete.md) – Génération automatique de suggestions de code et complétions contextuelles dans l’éditeur
 - [Mode Inline Chat](./docs/modes/mode-inline-chat.md) – Interaction contextuelle dans l’éditeur ou le terminal pour suggestions, explications ou aide sur le code et les commandes
 - [Mode Ask](./docs/modes/mode-ask.md) – Interface conversationnelle pour obtenir des explications, conseils techniques ou réponses sur la programmation, sans modifier les fichiers du projet
 - [Mode Edit](./docs/modes/mode-edit.md) – Modification rapide et interactive du code existant pour corriger, transformer ou optimiser
