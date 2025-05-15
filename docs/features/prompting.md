@@ -1,10 +1,10 @@
-# Contexte et portée dans les conversations GitHub Copilot
+# Optimisation du prompting avec GitHub Copilot
 
-La gestion du contexte est un aspect crucial pour obtenir des réponses pertinentes et précises de GitHub Copilot. Cette documentation explique comment le contexte fonctionne et comment l'optimiser.
+L'art du prompting est essentiel pour obtenir des réponses précises et adaptées de GitHub Copilot. Cette page présente les principes fondamentaux du prompting, la gestion du contexte et les techniques pour formuler des requêtes efficaces.
 
-## Qu'est-ce que le contexte dans Copilot ?
+## Qu'est-ce que le prompting avec Copilot ?
 
-Le contexte représente l'ensemble des informations disponibles à Copilot durant une conversation. Il comprend différents éléments :
+Le prompting désigne la manière de formuler les requêtes adressées à Copilot. Un prompt bien construit guide l'IA pour générer des suggestions pertinentes, en tenant compte du contexte fourni.
 
 ### Types de contexte
 
@@ -22,11 +22,11 @@ Le contexte représente l'ensemble des informations disponibles à Copilot duran
 - Si un fichier `.github/copilot-instructions.md` existe dans le dépôt, son contenu est automatiquement intégré dans le contexte et permet de personnaliser le comportement de GitHub Copilot
 
 > [!NOTE]
-> Il est toujours possible d'enrichir le contexte en utilisant les différentes commandes spéciales documentées dans [commandes.md](./commandes.md).
+> L'enrichissement du contexte est possible grâce aux commandes spéciales décrites dans [commandes.md](./commandes.md).
 
 ## Limites et contraintes du contexte
 
-GitHub Copilot possède une limite de contexte (nombre de tokens qu'il peut traiter) :
+GitHub Copilot possède une limite de contexte (nombre de tokens qu'il peut traiter) :
 
 - Les fichiers volumineux peuvent facilement dépasser cette limite
 - Les conversations longues réduisent l'espace disponible pour le nouveau contexte
@@ -51,4 +51,4 @@ Pour optimiser la prise en compte des informations par GitHub Copilot, il est re
 
 #### Segmentation des problèmes complexes
 
-Pour les tâches complexes, décomposer le problème en petites parties et guider Copilot à travers chaque étape, comme avec un partenaire humain.
+Pour les tâches complexes, décomposer le problème en petites parties et guider Copilot à travers chaque étape.
