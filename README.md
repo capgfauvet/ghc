@@ -23,6 +23,7 @@ Ce repository propose une vue d'ensemble rapide sur l'utilisation de GitHub Copi
 - [Prompting](./docs/features/prompting.md) – Conseils pour formuler des requêtes efficaces et tirer parti du prompting dans l’utilisation de Copilot
 - [Modèles disponibles](./docs/features/models.md) – Présentation des différents modèles d'IA, leurs avantages et inconvénients
 - [Raccourcis Copilot pour Visual Studio Code](./docs/features/shortcuts-vscode.md) – Principaux raccourcis pour l'utilisation de Copilot dans Visual Studio Code
+- [Revue de code automatique](./docs/features/copilot-reviewer.md) – Configuration de GitHub Copilot comme reviewer automatique de code sur GitHub
 
 ## Rester informé
 
