@@ -63,6 +63,7 @@ applyTo: "**/*.js"
 - Pour transmettre plusieurs informations, utiliser plusieurs instructions distinctes.
 - Ne pas faire référence à des ressources externes (ex : standards de codage précis) dans les instructions, afin d'éviter des références non comprises ou non accessibles par Copilot.
 - Organiser les instructions en plusieurs fichiers selon les thématiques ou types de tâches. Cette approche facilite la maintenance, permet de référencer des instructions personnalisées dans les fichiers de prompts, et évite la duplication pour différentes tâches.
+- Il est recommandé de référencer des fichiers d'instructions pour factoriser les règles communes et limiter la redondance.
 
 ## Instructions de domaine spécifique
 
@@ -73,3 +74,35 @@ applyTo: "**/*.js"
 - La TVA doit être appliquée avant les remises
 - Les commandes suivent le cycle : Créée -> Payée -> Préparée -> Expédiée -> Livrée
 ```
+
+## Instructions par type de génération
+
+GitHub Copilot permet de définir des instructions spécifiques pour différents types de génération via les paramètres de Visual Studio Code :
+
+| Type de génération                      | Paramètre de configuration                                          |
+| --------------------------------------- | ------------------------------------------------------------------- |
+| Génération de code                      | `github.copilot.chat.codeGeneration.instructions`                   |
+| Génération de tests                     | `github.copilot.chat.testGeneration.instructions`                   |
+| Revue de code                           | `github.copilot.chat.reviewSelection.instructions`                  |
+| Messages de commit                      | `github.copilot.chat.commitMessageGeneration.instructions`          |
+| Titres et descriptions de pull requests | `github.copilot.chat.pullRequestDescriptionGeneration.instructions` |
+
+### Configuration via settings.json
+
+Ces instructions peuvent être définies directement dans le fichier `settings.json` de Visual Studio Code :
+
+```json
+"github.copilot.chat.codeGeneration.instructions": [
+  {
+    "text": "Respecter le principe de responsabilité unique"
+  },
+  {
+    "file": "code-standards.instructions.md"
+  }
+]
+```
+
+Chaque instruction peut être spécifiée via :
+
+- `text` : instruction directement incluse dans les paramètres
+- `file` : référence à un fichier d'instructions externe
